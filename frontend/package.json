@@ -24,11 +24,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "clear-cache": "rimraf node_modules/.cache/babel-loader"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -48,8 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "rimraf": "^5.0.7"
-  }
+  
 }
