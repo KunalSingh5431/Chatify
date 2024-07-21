@@ -19,6 +19,11 @@ Welcome to Chatify! This is a real-time chat application built using modern web 
 - **Real-time Communication:** Socket.io
 - **Styling:** CSS, Material-UI
 
+## Screenshots
+
+![1716134995486](https://github.com/user-attachments/assets/c7dbaea4-68bf-4ad1-89a3-d9b41c2e2455)
+![1716135015006](https://github.com/user-attachments/assets/e04da2ed-427d-41be-841e-90d58b96e103)
+
 ## Installation
 
 Follow these steps to set up the project locally.
