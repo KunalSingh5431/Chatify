@@ -133,14 +133,14 @@ const Signup = () => {
   return (
     <VStack spacing="5px">
       <FormControl /*id="first-name"*/ isRequired>
-        <FormLabel>Name</FormLabel>
+        <FormLabel fontWeight="700">Name</FormLabel>
         <Input
           placeholder="Enter Your Name"
           onChange={(e) => setName(e.target.value)}
         />
       </FormControl>
       <FormControl id="email" isRequired>
-        <FormLabel>Email Address</FormLabel>
+        <FormLabel fontWeight="700">Email Address</FormLabel>
         <Input
           type="email"
           placeholder="Enter Your Email Address"
@@ -148,37 +148,37 @@ const Signup = () => {
         />
       </FormControl>
       <FormControl id="password" isRequired>
-        <FormLabel>Password</FormLabel>
+        <FormLabel fontWeight="700">Password</FormLabel>
         <InputGroup size="md">
           <Input
             type={show ? "text" : "password"}
             placeholder="Enter Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
-              {show ? "Hide" : "Show"}
+          <InputRightElement width='4.5rem'>
+            <Button h='1.75rem' size="sm" onClick={handleClick} colorScheme='blue'>
+              {show?<i class="fa-solid fa-eye-slash"></i>:<i class="fa-solid fa-eye"></i>}
             </Button>
-          </InputRightElement>
+        </InputRightElement>
         </InputGroup>
       </FormControl>
       <FormControl id="password" isRequired>
-        <FormLabel>Confirm Password</FormLabel>
+        <FormLabel fontWeight="700">Confirm Password</FormLabel>
         <InputGroup size="md">
           <Input
             type={show ? "text" : "password"}
             placeholder="Confirm password"
             onChange={(e) => setConfirmpassword(e.target.value)}
           />
-          <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
-              {show ? "Hide" : "Show"}
+           <InputRightElement width='4.5rem'>
+            <Button h='1.75rem' size="sm" onClick={handleClick} colorScheme='blue'>
+              {show?<i class="fa-solid fa-eye-slash"></i>:<i class="fa-solid fa-eye"></i>}
             </Button>
-          </InputRightElement>
+        </InputRightElement>
         </InputGroup>
       </FormControl>
       <FormControl id="pic">
-        <FormLabel>Upload your Picture</FormLabel>
+        <FormLabel fontWeight="700">Upload your Picture</FormLabel>
         <Input
           type="file"
           p={1.5}
@@ -192,6 +192,7 @@ const Signup = () => {
         style={{ marginTop: 15 }}
         onClick={submitHandler}
         isLoading={picLoading}
+        fontWeight="700"
       >
         Sign Up
       </Button>

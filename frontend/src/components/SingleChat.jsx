@@ -13,7 +13,7 @@ import animationData from '../animations/typing.json';
 
 import io from 'socket.io-client';
 
-const ENDPOINT = 'http://localhost:5000'; // Change this as needed for production
+const ENDPOINT = 'http://localhost:5000'; 
 let socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
