@@ -11,8 +11,7 @@ import {Drawer,DrawerOverlay,DrawerHeader,DrawerContent,DrawerBody} from "@chakr
 import axios from "axios";
 import UserListItem from '../UserAvatar/UserListItem';
 import { getSender } from '../../config/ChatLogics';
-import NotificationBadge from "react-notification-badge"
-import { Effect } from 'react-notification-badge';
+
 
 const SideDrawer = () => {
   const [search, setSearch] = useState("");
@@ -125,7 +124,6 @@ const SideDrawer = () => {
     <div>
       <Menu>
           <MenuButton p={1}>
-            <NotificationBadge count={notification.length} effect={Effect.SCALE}/>
             <BellIcon fontSize="2xl" m={1}></BellIcon>
           </MenuButton>
           <MenuList pl={2}>
